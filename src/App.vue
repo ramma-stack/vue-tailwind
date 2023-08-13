@@ -50,6 +50,23 @@
                     <h2 class="capitalize">{{ slotProps.lastName }}</h2>
                 </template>
             </NameList> -->
+            <!-- <div class="flex">
+                <button @click=" tabChange = 'TabA'">Tab A</button>
+                <button @click=" tabChange = 'TabB'">Tab B</button>
+                <button @click=" tabChange = 'TabC'">Tab C</button>
+            </div>
+
+            <KeepAlive>
+                <component :is="tabChange" />
+            </KeepAlive> -->
+            <!-- <TabA v-if="tabChange === 'TabA'" />
+            <TabB v-if="tabChange === 'TabB'" />
+            <TabC v-if="tabChange === 'TabC'" /> -->
+            <h2>Hello World!</h2>
+            <button type="button"
+                class="py-3 px-4 inline-flex justify-center items-center gap-2 rounded-md border border-transparent font-semibold bg-blue-500 text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all text-sm dark:focus:ring-offset-gray-800"
+                @click="showModal = true">Show Modal</button>
+            <Modal v-show="showModal"  @close="showModal = false" />
         </div>
     </header>
 </template>
@@ -67,6 +84,10 @@ import ComponentA from "./components/ProvideInject/ComponentA.vue";
 import CreatePopup from "./components/CreatePopup.vue";
 import Slots from "./components/Slots.vue";
 import NameList from "./components/NameList.vue";
+import TabA from "./components/tabs/TabA.vue";
+import TabB from "./components/tabs/TabB.vue";
+import TabC from "./components/tabs/TabC.vue";
+import Modal from "./components/Modal.vue";
 
 export default {
     name: "App",
@@ -76,7 +97,11 @@ export default {
         Popup,
         CreatePopup,
         Slots,
-        NameList
+        NameList,
+        TabA,
+        TabB,
+        TabC,
+        Modal
     },
     data() {
         return {
@@ -84,6 +109,7 @@ export default {
             heroName: "Superman",
             showModal: false,
             showCreate: false,
+            tabChange: 'TabA'
         };
     },
     methods: {
