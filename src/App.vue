@@ -72,22 +72,22 @@
 </template>
 
 <script>
-import Popup from "./components/Popup.vue";
-import Basic from "./components/Basic.vue";
-import Form from "./components/Form.vue";
-import Handling from "./components/Handling.vue";
-import List from "./components/List.vue";
-import Computed from "./components/Computed.vue";
-import Watches from "./components/Watches.vue";
-import Greet from "./components/Greet.vue";
-import ComponentA from "./components/ProvideInject/ComponentA.vue";
-import CreatePopup from "./components/CreatePopup.vue";
-import Slots from "./components/Slots.vue";
-import NameList from "./components/NameList.vue";
-import TabA from "./components/tabs/TabA.vue";
-import TabB from "./components/tabs/TabB.vue";
-import TabC from "./components/tabs/TabC.vue";
-import Modal from "./components/Modal.vue";
+import Popup from "./components/client/Popup.vue";
+import Basic from "./components/client/Basic.vue";
+import Form from "./components/client/Form.vue";
+import Handling from "./components/client/Handling.vue";
+import List from "./components/client/List.vue";
+import Computed from "./components/client/Computed.vue";
+import Watches from "./components/client/Watches.vue";
+import Greet from "./components/client/Greet.vue";
+import ComponentA from "./components/client/ProvideInject/ComponentA.vue";
+import CreatePopup from "./components/client/CreatePopup.vue";
+import Slots from "./components/client/Slots.vue";
+import NameList from "./components/client/NameList.vue";
+import TabA from "./components/client/tabs/TabA.vue";
+import TabB from "./components/client/tabs/TabB.vue";
+import TabC from "./components/client/tabs/TabC.vue";
+import Modal from "./components/client/Modal.vue";
 
 export default {
     name: "App",
